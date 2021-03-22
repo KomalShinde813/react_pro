@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+.removeScroll{
+    overflow:hidden !important;  
+}
+.addbtn {
+    float: left;
+    margin: 8px !important;
+    position: fixed;
+    border-radius: 20px !important;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .spin-always {
+    animation: spin-animate infinite 20s linear;
+  }
+}
+
+.header{
+  & >  .portal-info {
+    background-color: #3f598d;
+    height: 60px;
+    display: flex;  
+    font-size: 15px;
+    padding-left:10px;
+
+    .branding-logo{
+      width:125px;
+      height:50px;
+      padding-top:10px;
+      margin-right: 20px;
+      img {
+        width:100%;
+      }
+    }
+
+    > .info {
+      font-size: 90%;      
+      display: flex;
+      flex: 1 0 calc(25% - 10px);
+      align-items: center;
+      justify-content: center;
+      
+      .icon{
+        margin-top: 5px;
+        margin-right: 10px;
+      }
+
+      .key-value{
+        text-align: left;      
+        label:first-child{
+          text-transform: uppercase;
+        }
+
+        label.value {
+          font-weight: bold;
+          display: block;
+        }
+      }
+    }
+  }
+
+  & >  .navbar {
+    background-color: #3f598d;
+    height: 40px;
+    display: flex;  
+    font-size: 15px;
+    padding-left:10px;
+    color:white;
+    
+    ul {    
+      list-style-type: none;
+      padding:0px;
+      margin-top:5px;
+
+      li {
+        display: inline-block;
+        margin-right: 5px;
+        a {
+          padding: 5px 10px;
+          display: block;
+          text-decoration: none;
+          transition: 0.2s;
+          color:inherit;
+          &:hover{            
+            transform:translateY(2px)
+          }        
+        }
+      }
+    }
+
+    ul.pull-right{
+      margin-left:auto;
+      li{
+        border-width: 0px;    
+        
+        .last-login{
+          font-size: 80%;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes spin-animate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
