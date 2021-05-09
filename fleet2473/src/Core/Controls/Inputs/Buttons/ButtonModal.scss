@@ -1,0 +1,15 @@
+.modal-btn {
+    margin: 0px 10px !important;
+    .MuiButton-root {
+        min-width: 40px !important;
+        padding: 10px 0px;
+    }
+}
+
+.modal-btn-update {
+    display: inline-block;
+    .MuiButton-root {
+        min-width: 40px !important;
+        padding: 10px 8px !important;
+    }
+}
